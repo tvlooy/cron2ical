@@ -1,0 +1,183 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "3863b63075c3675b35aaceca8b785ed1",
+    "packages": [
+        {
+            "name": "eluceo/ical",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markuspoerschke/iCal.git",
+                "reference": "99ac40c4b34521a107e8088a5e785e67d3b7387f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markuspoerschke/iCal/zipball/99ac40c4b34521a107e8088a5e785e67d3b7387f",
+                "reference": "99ac40c4b34521a107e8088a5e785e67d3b7387f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Eluceo\\iCal": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maciej Łebkowski",
+                    "email": "m.lebkowski@gmail.com",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Markus Poerschke",
+                    "email": "markus@eluceo.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The eluceo/iCal package offers a abstraction layer for creating iCalendars. You can easily create iCal files by using PHP object instead of typing your *.ics file by hand. The output will follow RFC 2445 as best as possible.",
+            "homepage": "https://github.com/eluceo/iCal",
+            "keywords": [
+                "calendar",
+                "iCalendar",
+                "ical",
+                "ics",
+                "php calendar"
+            ],
+            "time": "2014-08-11 14:33:47"
+        },
+        {
+            "name": "mtdowling/cron-expression",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mtdowling/cron-expression.git",
+                "reference": "d98242d95f82a0e4fca8b402a75daecc64fc3499"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mtdowling/cron-expression/zipball/d98242d95f82a0e4fca8b402a75daecc64fc3499",
+                "reference": "d98242d95f82a0e4fca8b402a75daecc64fc3499",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Cron": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "time": "2014-09-02 06:17:31"
+        },
+        {
+            "name": "symfony/console",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "a5d09c3e39e50efdc24aebdf9f4d6712259cc129"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/a5d09c3e39e50efdc24aebdf9f4d6712259cc129",
+                "reference": "a5d09c3e39e50efdc24aebdf9f4d6712259cc129",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.6-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2014-08-31 04:11:39"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "mtdowling/cron-expression": 20,
+        "eluceo/ical": 20,
+        "symfony/console": 20
+    },
+    "prefer-stable": false,
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "name": "ctors/cron2ical",
+    "description": "Converts a crontab file to an iCalendar file",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Tom Van Looy",
+            "email": "tom@ctors.net"
+        }
+    ],
+    "require": {
+        "mtdowling/cron-expression": "dev-master",
+        "eluceo/ical": "dev-master",
+        "symfony/console": "dev-master"
+    },
+    "autoload": {
+        "psr-0": { "Ctors": "" }
+    }
+}

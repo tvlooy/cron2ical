@@ -59,8 +59,10 @@ class Cron2ICalCommand extends Command
 
         $calendar = new Calendar('Cron calendar');
         $totalEvents = 0;
+        $totalCrons = 0;
         while (($crontabLine = fgets($crontabFileHandle)) !== false) {
             if (!$this->ensureValidCrontabLine($crontabLine)) continue;
+            $totalCrons++;
 
             list($cronTime, $cronCommand) = $this->splitCrontabLine($crontabLine);
             $cronExpression = CronExpression::factory($cronTime);
@@ -79,17 +81,18 @@ class Cron2ICalCommand extends Command
         }
 
         fclose($crontabFileHandle);
-        $this->writeICalFile($iCalFileName, $calendar);
+        $this->writeICalFile($iCalFileName, $calendar, $totalCrons);
         $output->writeln("<info>Saved $totalEvents events to $iCalFileName!</info>");
     }
 
     /**
      * @param $iCalFileName
      * @param $calendar
+     * @param $totalCrons
      */
-    private function writeICalFile($iCalFileName, $calendar)
+    private function writeICalFile($iCalFileName, $calendar, $totalCrons)
     {
-        $this->output->writeln("\n<info>Done! Saving file ...</info>");
+        $this->output->writeln("\n<info>Processed ${totalCrons} cronjobs! Saving file ...</info>");
         file_put_contents($iCalFileName, $calendar->render());
     }
 
